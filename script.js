@@ -86,26 +86,23 @@ for (let i = 0; i < frameCount; i++) {
     // Calculate progress percentage
     let progress = Math.round((imagesLoaded / frameCount) * 100);
 
-    // Limit to 98% during load for that "finishing touch" feel
-    if (progress > 98 && imagesLoaded < frameCount) progress = 98;
-
     // Update UI
     if (progressFill) progressFill.style.width = progress + "%";
     if (percentText) percentText.innerText = progress + "%";
 
-    if (imagesLoaded === frameCount) {
-      // Small delay for 100% and then hide loader
-      setTimeout(() => {
+    // "Faster Start" Logic: Show page when first 100 images are ready (initial scroll batch)
+    // or when everything is done. This prevents waiting too long on slow internet.
+    const startThreshold = 100;
+
+    if (imagesLoaded === startThreshold || imagesLoaded === frameCount) {
+      if (loader && loader.style.top !== "-100%") {
         if (progressFill) progressFill.style.width = "100%";
         if (percentText) percentText.innerText = "100%";
 
-        setTimeout(() => {
-          if (loader) {
-            loader.style.top = "-100%";
-            render(); // Initial render when all images are loaded
-          }
-        }, 300);
-      }, 200);
+        // Instant transition for better performance
+        loader.style.top = "-100%";
+        render();
+      }
     }
   };
   images.push(img);
