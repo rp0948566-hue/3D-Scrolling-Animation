@@ -39,6 +39,14 @@ The core of **CodeWithRudra** is built on a high-speed canvas rendering engine. 
 | **Asset Size** | ~75MB (Compressed) |
 | **Interaction Lag** | 0ms |
 
+## 📱 Responsive Strategy
+
+Our multi-device compatibility approach uses modular breakpoints:
+
+- **Desktop**: Full 4K ultra-wide support.
+- **Tablet**: Optimized canvas aspect ratios for iPad/Surface.
+- **Mobile**: Dynamic text repositioning and optimized asset scaling for limited bandwidth.
+
 ## 🛠️ Tech Stack
 
 - **Languages**: HTML5, CSS3, JavaScript (ES6+)
