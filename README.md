@@ -60,6 +60,15 @@ Our multi-device compatibility approach uses modular breakpoints:
 - **Design Inspiration**: Kinetic Eras / Tech Aesthetics
 - **Engine Optimization**: Advanced Asset Chunking Logic
 
+## 🌐 Browser Compatibility
+
+| Browser | Version | Support |
+| :--- | :--- | :--- |
+| **Chrome** | 80+ | Full |
+| **Safari** | 13+ | Full |
+| **Edge** | 85+ | Full |
+| **Firefox** | 75+ | High |
+
 ## 🛠️ Tech Stack
 
 - **Languages**: HTML5, CSS3, JavaScript (ES6+)
