@@ -54,6 +54,12 @@ Our multi-device compatibility approach uses modular breakpoints:
 - [ ] Dynamic dark/light theme switching.
 - [ ] Enhanced WebGL post-processing effects.
 
+## 🤝 Contributor Highlights
+
+- **Lead Developer**: CodeWithRudra
+- **Design Inspiration**: Kinetic Eras / Tech Aesthetics
+- **Engine Optimization**: Advanced Asset Chunking Logic
+
 ## 🛠️ Tech Stack
 
 - **Languages**: HTML5, CSS3, JavaScript (ES6+)
