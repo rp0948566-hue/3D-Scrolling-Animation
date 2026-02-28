@@ -130,6 +130,114 @@ canvas {
     font-family: gilroy;
 }
 
+/* Response for medium screens */
+@media (max-width: 1024px) {
+    #loop {
+        font-size: 70px;
+    }
+
+    #page1>#right-text>h1,
+    #page1>#left-text>h1 {
+        font-size: 40px;
+    }
+
+    #page2>#text1>h1 {
+        font-size: 50px;
+    }
+
+    #page3>#text3>h1 {
+        font-size: 60px;
+    }
+}
+
+/* Responsive for mobile devices */
+@media (max-width: 600px) {
+    #loop {
+        font-size: 40px;
+        top: 20%;
+    }
+
+    #nav {
+        padding: 0px 15px;
+    }
+
+    #nav>h3 {
+        font-size: 16px;
+    }
+
+    #nav>button {
+        padding: 8px 15px;
+        font-size: 10px;
+    }
+
+    #page>h3 {
+        font-size: 14px;
+        width: 90%;
+        top: 50%;
+    }
+
+    #page>h4 {
+        top: 65%;
+        left: 5%;
+        font-size: 12px;
+    }
+
+    #page1>#right-text,
+    #page1>#left-text,
+    #page2>#text1,
+    #page2>#text2,
+    #page3>#text3 {
+        position: absolute;
+        width: 90%;
+        left: 5%;
+        right: auto;
+        text-align: left;
+    }
+
+    #page1>#right-text {
+        top: 15%;
+    }
+
+    #page1>#left-text {
+        top: 55%;
+    }
+
+    #page1>#left-text>h1,
+    #page1>#right-text>h1 {
+        font-size: 28px;
+    }
+
+    #page2>#text1 {
+        top: 15%;
+    }
+
+    #page2>#text1>h1 {
+        font-size: 35px;
+    }
+
+    #page2>#text2 {
+        top: 60%;
+    }
+
+    #page2>#text2>p {
+        font-size: 13px;
+    }
+
+    #page3>#text3 {
+        top: 30%;
+    }
+
+    #page3>#text3>h1 {
+        font-size: 40px;
+    }
+}
+
+/* Ensure canvas takes full space but doesn't overflow */
+canvas {
+    max-width: 100% !important;
+    max-height: 100% !important;
+}
+
 #loop>h1 {
     font-weight: 400;
     animation-name: anim;
