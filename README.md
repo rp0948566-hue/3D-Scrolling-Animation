@@ -1,0 +1,38 @@
+# 🚀 CodeWithRudra - 3D Scrolling Animation
+
+Welcome to a world where code meets art. **CodeWithRudra** is a premium, high-performance 3D scrolling experience that pushes the boundaries of web interaction.
+
+![Project Preview](./male0151.png)
+
+## 🌟 The Vision
+CodeWithRudra isn't just a website; it's a digital powerhouse. We architect the void, define the logic, and deploy dreams. By blending **Three.js-style** frame sequences with **GSAP** and **Locomotive Scroll**, we've created a reality that transcends the screen.
+
+## ✨ Key Features
+- **Cinematic 3D Scroll**: Over 300 high-fidelity frames perfectly synced to your scroll progress.
+- **Smooth Interaction**: Integrated with Locomotive Scroll for a buttery-smooth desktop experience.
+- **Dynamic Text Entrances**: Premium GSAP animations that breathe life into every heading and paragraph.
+- **Advanced Security**: Built-in protection against unauthorized image downloads via security overlays and keyboard monitoring.
+- **Ultra-Responsive**: Designed to look stunning across all modern display technologies.
+
+## 🛠️ Tech Stack
+- **Languages**: HTML5, CSS3, JavaScript (ES6+)
+- **Libraries**: 
+  - [GSAP](https://greensock.com/gsap/) (GreenSock Animation Platform)
+  - [ScrollTrigger](https://greensock.com/scrolltrigger/)
+  - [Locomotive Scroll](https://locomotivemtl.github.io/locomotive-scroll/)
+
+## 🚀 Getting Started
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/rp0948566-hue/3D-Scrolling-Animation.git
+   ```
+2. Open `index.html` in any modern web browser.
+3. Scroll down and enjoy the journey!
+
+## 📜 Legal & Copyright
+Copyright © 2026 **CodeWithRudra**. All Rights Reserved.
+
+Designed and developed by **Rudra**. The 3D assets and code patterns are protected. Unauthorized reproduction or commercial use is strictly prohibited.
+
+---
+*Built with ❤️ and Logic by CodeWithRudra.*
