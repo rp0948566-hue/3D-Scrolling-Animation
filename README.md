@@ -47,6 +47,13 @@ Our multi-device compatibility approach uses modular breakpoints:
 - **Tablet**: Optimized canvas aspect ratios for iPad/Surface.
 - **Mobile**: Dynamic text repositioning and optimized asset scaling for limited bandwidth.
 
+## 🗺️ Future Roadmap
+
+- [ ] 3D Model Integration with Three.js.
+- [ ] Multi-language localized content support.
+- [ ] Dynamic dark/light theme switching.
+- [ ] Enhanced WebGL post-processing effects.
+
 ## 🛠️ Tech Stack
 
 - **Languages**: HTML5, CSS3, JavaScript (ES6+)
