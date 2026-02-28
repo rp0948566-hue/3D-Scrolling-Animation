@@ -72,9 +72,6 @@ const imageSeq = {
 };
 
 let imagesLoaded = 0;
-const progressFill = document.querySelector("#progress-fill");
-const percentText = document.querySelector("#percent");
-const loader = document.querySelector("#loader");
 
 // Proper preloading to avoid flickering
 for (let i = 0; i < frameCount; i++) {
@@ -83,28 +80,12 @@ for (let i = 0; i < frameCount; i++) {
   img.onload = () => {
     imagesLoaded++;
 
-    // Calculate progress percentage
-    let progress = Math.round((imagesLoaded / frameCount) * 100);
+    // "Faster Start" Logic: Show content when first 50 images are ready
+    const startThreshold = 50;
 
-    // Update UI
-    if (progressFill) progressFill.style.width = progress + "%";
-    if (percentText) percentText.innerText = progress + "%";
-
-    // "Faster Start" Logic: Show page when first 100 images are ready (initial scroll batch)
-    // or when everything is done. This prevents waiting too long on slow internet.
-    const startThreshold = 100;
-
-    if (imagesLoaded === startThreshold || imagesLoaded === frameCount) {
-      if (loader && loader.style.top !== "-100%") {
-        if (progressFill) progressFill.style.width = "100%";
-        if (percentText) percentText.innerText = "100%";
-
-        // Instant transition for better performance
-        loader.style.top = "-100%";
-        render();
-        // Force refresh to fix any layout shifts on mobile
-        ScrollTrigger.refresh();
-      }
+    if (imagesLoaded === startThreshold) {
+      render();
+      ScrollTrigger.refresh();
     }
   };
   images.push(img);

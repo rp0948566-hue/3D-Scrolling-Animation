@@ -9,53 +9,6 @@
     /* Prevent text/image selection */
 }
 
-#loader {
-    height: 100vh;
-    width: 100vw;
-    background-color: #000;
-    position: fixed;
-    z-index: 1000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-    transition: all ease 0.8s;
-}
-
-#loader-content {
-    text-align: center;
-    width: 300px;
-}
-
-#loader-content h3 {
-    font-size: 20px;
-    letter-spacing: 5px;
-    margin-bottom: 20px;
-    font-weight: 400;
-}
-
-#loader-content h4 {
-    font-size: 12px;
-    font-weight: 400;
-    color: #7c7c7c;
-    letter-spacing: 2px;
-    margin-top: 15px;
-}
-
-#progress-bar {
-    height: 2px;
-    width: 100%;
-    background-color: #333;
-    border-radius: 50px;
-    overflow: hidden;
-}
-
-#progress-fill {
-    height: 100%;
-    width: 0%;
-    background-color: #fff;
-    transition: width 0.3s ease;
-}
 
 html,
 body {
