@@ -69,6 +69,12 @@ Our multi-device compatibility approach uses modular breakpoints:
 | **Edge** | 85+ | Full |
 | **Firefox** | 75+ | High |
 
+## 🛠️ Step-by-Step Installation
+
+1. **Clone**: `git clone [url]`
+2. **Server**: Use VS Code 'Live Server' or any static hosting.
+3. **Explore**: Navigate to the root directory and open `index.html`.
+
 ## 🛠️ Tech Stack
 
 - **Languages**: HTML5, CSS3, JavaScript (ES6+)
