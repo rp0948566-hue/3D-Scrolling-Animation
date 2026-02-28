@@ -75,6 +75,15 @@ Our multi-device compatibility approach uses modular breakpoints:
 2. **Server**: Use VS Code 'Live Server' or any static hosting.
 3. **Explore**: Navigate to the root directory and open `index.html`.
 
+## ⌨️ Advanced Keyboard Controls
+
+| Key | Action |
+| :--- | :--- |
+| **F12** | Blocked (Security) |
+| **Ctrl+S** | Blocked (Security) |
+| **Ctrl+U** | Blocked (Security) |
+| **Scroll** | 3D Animation Playback |
+
 ## 🛠️ Tech Stack
 
 - **Languages**: HTML5, CSS3, JavaScript (ES6+)
