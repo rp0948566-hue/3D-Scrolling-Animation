@@ -20,6 +20,16 @@ CodeWithRudra isn't just a website; it's a digital powerhouse. We architect the 
 - **Advanced Security**: Built-in protection against unauthorized image downloads via security overlays and keyboard monitoring.
 - **Ultra-Responsive**: Designed to look stunning across all modern display technologies.
 
+## 🏗️ System Architecture
+
+The core of **CodeWithRudra** is built on a high-speed canvas rendering engine. By decoupling the scroll logic from the rendering cycle, we achieve ultra-smooth 60FPS animations even with hundreds of high-resolution image assets.
+
+### 🧠 Core Components
+
+- **Canvas Engine**: Efficiently draws 2D bitmaps frame-by-frame.
+- **Scroll Proxy**: Maps deep-scrolling vertical space to a finite image sequence.
+- **Asset Manager**: background-loads resources to ensure zero-latency playback.
+
 ## 🛠️ Tech Stack
 
 - **Languages**: HTML5, CSS3, JavaScript (ES6+)
