@@ -102,6 +102,8 @@ for (let i = 0; i < frameCount; i++) {
         // Instant transition for better performance
         loader.style.top = "-100%";
         render();
+        // Force refresh to fix any layout shifts on mobile
+        ScrollTrigger.refresh();
       }
     }
   };
