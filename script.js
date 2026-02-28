@@ -146,6 +146,36 @@ gsap.to("#page1", {
     scroller: `#main`,
   },
 });
+
+// Premium Text Animations for Page 1
+gsap.from("#page1 #right-text h1, #page1 #right-text h3", {
+  y: 50,
+  opacity: 0,
+  stagger: 0.2,
+  duration: 1,
+  scrollTrigger: {
+    trigger: "#page1",
+    start: "top 60%",
+    end: "top 40%",
+    scroller: "#main",
+    scrub: 2,
+  }
+});
+
+gsap.from("#page1 #left-text h1, #page1 #left-text h3", {
+  y: 50,
+  opacity: 0,
+  stagger: 0.2,
+  duration: 1,
+  scrollTrigger: {
+    trigger: "#page1",
+    start: "top 60%",
+    end: "top 40%",
+    scroller: "#main",
+    scrub: 2,
+  }
+});
+
 gsap.to("#page2", {
   scrollTrigger: {
     trigger: `#page2`,
@@ -155,6 +185,33 @@ gsap.to("#page2", {
     scroller: `#main`,
   },
 });
+
+// Premium Text Animations for Page 2
+gsap.from("#page2 #text1 h1, #page2 #text1 h3", {
+  x: -100,
+  opacity: 0,
+  stagger: 0.2,
+  scrollTrigger: {
+    trigger: "#page2",
+    start: "top 60%",
+    end: "top 40%",
+    scroller: "#main",
+    scrub: 2,
+  }
+});
+
+gsap.from("#page2 #text2 p", {
+  x: 100,
+  opacity: 0,
+  scrollTrigger: {
+    trigger: "#page2",
+    start: "top 60%",
+    end: "top 40%",
+    scroller: "#main",
+    scrub: 2,
+  }
+});
+
 gsap.to("#page3", {
   scrollTrigger: {
     trigger: `#page3`,
@@ -163,4 +220,18 @@ gsap.to("#page3", {
     pin: true,
     scroller: `#main`,
   },
+});
+
+// Premium Text Animations for Page 3
+gsap.from("#page3 #text3 h1, #page3 #text3 h3", {
+  y: 100,
+  opacity: 0,
+  stagger: 0.2,
+  scrollTrigger: {
+    trigger: "#page3",
+    start: "top 60%",
+    end: "top 40%",
+    scroller: "#main",
+    scrub: 2,
+  }
 });
