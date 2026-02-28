@@ -84,6 +84,12 @@ Our multi-device compatibility approach uses modular breakpoints:
 | **Ctrl+U** | Blocked (Security) |
 | **Scroll** | 3D Animation Playback |
 
+## 🎨 Design Principles
+
+- **Minimalism**: Focus on the 3D asset with clean typography.
+- **Immersion**: Removing standard browser interactions to prioritize the visual journey.
+- **Speed**: Instant-start logic for immediate user engagement.
+
 ## 🛠️ Tech Stack
 
 - **Languages**: HTML5, CSS3, JavaScript (ES6+)
