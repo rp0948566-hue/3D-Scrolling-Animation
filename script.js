@@ -1,5 +1,5 @@
-// Advanced Security: Disable right-click, keyboard shortcuts, and image interaction
-window.addEventListener("contextmenu", (e) => e.preventDefault());
+// Advanced Security: Image interaction is blocked via CSS and Overlay
+// window.addEventListener("contextmenu", (e) => e.preventDefault()); // Re-enabled right-click as requested
 
 window.addEventListener("keydown", (e) => {
   // Block F12 (DevTools)
