@@ -117,3 +117,7 @@ Designed and developed by **Rudra**. The 3D assets and code patterns are protect
 
 ---
 *Built with ❤️ and Logic by CodeWithRudra.*
+
+## ⚖️ Project License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
