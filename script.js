@@ -1,5 +1,18 @@
-// Disable right-click globally
+// Advanced Security: Disable right-click, keyboard shortcuts, and image interaction
 window.addEventListener("contextmenu", (e) => e.preventDefault());
+
+window.addEventListener("keydown", (e) => {
+  // Block F12 (DevTools)
+  if (e.keyCode === 123) e.preventDefault();
+  // Block Ctrl+Shift+I (DevTools)
+  if (e.ctrlKey && e.shiftKey && e.keyCode === 73) e.preventDefault();
+  // Block Ctrl+S (Save)
+  if (e.ctrlKey && e.keyCode === 83) e.preventDefault();
+  // Block Ctrl+U (View Source)
+  if (e.ctrlKey && e.keyCode === 85) e.preventDefault();
+  // Block Ctrl+P (Print)
+  if (e.ctrlKey && e.keyCode === 80) e.preventDefault();
+});
 
 function locomotive() {
   gsap.registerPlugin(ScrollTrigger);
