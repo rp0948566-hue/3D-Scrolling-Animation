@@ -72,6 +72,9 @@ const imageSeq = {
 };
 
 let imagesLoaded = 0;
+const progressFill = document.querySelector("#progress-fill");
+const percentText = document.querySelector("#percent");
+const loader = document.querySelector("#loader");
 
 // Proper preloading to avoid flickering
 for (let i = 0; i < frameCount; i++) {
@@ -79,8 +82,30 @@ for (let i = 0; i < frameCount; i++) {
   img.src = files(i);
   img.onload = () => {
     imagesLoaded++;
+
+    // Calculate progress percentage
+    let progress = Math.round((imagesLoaded / frameCount) * 100);
+
+    // Limit to 98% during load for that "finishing touch" feel
+    if (progress > 98 && imagesLoaded < frameCount) progress = 98;
+
+    // Update UI
+    if (progressFill) progressFill.style.width = progress + "%";
+    if (percentText) percentText.innerText = progress + "%";
+
     if (imagesLoaded === frameCount) {
-      render(); // Initial render when all images are loaded
+      // Small delay for 100% and then hide loader
+      setTimeout(() => {
+        if (progressFill) progressFill.style.width = "100%";
+        if (percentText) percentText.innerText = "100%";
+
+        setTimeout(() => {
+          if (loader) {
+            loader.style.top = "-100%";
+            render(); // Initial render when all images are loaded
+          }
+        }, 300);
+      }, 200);
     }
   };
   images.push(img);
